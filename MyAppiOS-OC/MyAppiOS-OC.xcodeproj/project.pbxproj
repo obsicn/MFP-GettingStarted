@@ -19,6 +19,14 @@
 		E9F381401C99342800858B4C /* openssl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F3813A1C99342800858B4C /* openssl.framework */; };
 		E9F381411C99342800858B4C /* SQLCipher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F3813B1C99342800858B4C /* SQLCipher.framework */; };
 		E9F381421C99342800858B4C /* Localizations.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E9F3813C1C99342800858B4C /* Localizations.bundle */; };
+		E9F381441C9936C100858B4C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F381431C9936C100858B4C /* SystemConfiguration.framework */; };
+		E9F381461C9936D800858B4C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F381451C9936D800858B4C /* MobileCoreServices.framework */; };
+		E9F381481C9936E000858B4C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F381471C9936E000858B4C /* CoreData.framework */; };
+		E9F3814A1C9936E800858B4C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F381491C9936E800858B4C /* CoreLocation.framework */; };
+		E9F3814C1C9936F300858B4C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F3814B1C9936F300858B4C /* Security.framework */; };
+		E9F3814E1C99370500858B4C /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F3814D1C99370500858B4C /* libstdc++.6.tbd */; };
+		E9F381501C99370E00858B4C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F3814F1C99370E00858B4C /* libz.tbd */; };
+		E9F381521C99371700858B4C /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F381511C99371700858B4C /* libc++.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +46,14 @@
 		E9F3813A1C99342800858B4C /* openssl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = openssl.framework; sourceTree = "<group>"; };
 		E9F3813B1C99342800858B4C /* SQLCipher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SQLCipher.framework; sourceTree = "<group>"; };
 		E9F3813C1C99342800858B4C /* Localizations.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Localizations.bundle; sourceTree = "<group>"; };
+		E9F381431C9936C100858B4C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E9F381451C9936D800858B4C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		E9F381471C9936E000858B4C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E9F381491C9936E800858B4C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E9F3814B1C9936F300858B4C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		E9F3814D1C99370500858B4C /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
+		E9F3814F1C99370E00858B4C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		E9F381511C99371700858B4C /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +61,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9F381521C99371700858B4C /* libc++.tbd in Frameworks */,
+				E9F381501C99370E00858B4C /* libz.tbd in Frameworks */,
+				E9F3814E1C99370500858B4C /* libstdc++.6.tbd in Frameworks */,
+				E9F3814C1C9936F300858B4C /* Security.framework in Frameworks */,
+				E9F3814A1C9936E800858B4C /* CoreLocation.framework in Frameworks */,
+				E9F381481C9936E000858B4C /* CoreData.framework in Frameworks */,
+				E9F381461C9936D800858B4C /* MobileCoreServices.framework in Frameworks */,
+				E9F381441C9936C100858B4C /* SystemConfiguration.framework in Frameworks */,
 				E9F381401C99342800858B4C /* openssl.framework in Frameworks */,
 				E9F3813F1C99342800858B4C /* IBMMobileFirstPlatformFoundationJSONStore.framework in Frameworks */,
 				E9F381411C99342800858B4C /* SQLCipher.framework in Frameworks */,
@@ -58,6 +82,14 @@
 		E9F381121C991C0A00858B4C = {
 			isa = PBXGroup;
 			children = (
+				E9F381511C99371700858B4C /* libc++.tbd */,
+				E9F3814F1C99370E00858B4C /* libz.tbd */,
+				E9F3814D1C99370500858B4C /* libstdc++.6.tbd */,
+				E9F3814B1C9936F300858B4C /* Security.framework */,
+				E9F381491C9936E800858B4C /* CoreLocation.framework */,
+				E9F381471C9936E000858B4C /* CoreData.framework */,
+				E9F381451C9936D800858B4C /* MobileCoreServices.framework */,
+				E9F381431C9936C100858B4C /* SystemConfiguration.framework */,
 				E9F381351C99342800858B4C /* worklight.plist */,
 				E9F381361C99342800858B4C /* WorklightAPI */,
 				E9F3811D1C991C0A00858B4C /* MyAppiOS-OC */,
