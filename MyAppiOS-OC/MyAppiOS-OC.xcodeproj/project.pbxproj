@@ -342,6 +342,7 @@
 				);
 				INFOPLIST_FILE = "MyAppiOS-OC/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = " -ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.obsi.MyAppiOS-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -358,6 +359,7 @@
 				);
 				INFOPLIST_FILE = "MyAppiOS-OC/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = " -ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.obsi.MyAppiOS-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
