@@ -13,6 +13,12 @@
 		E9F381291C991C0A00858B4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9F381271C991C0A00858B4C /* Main.storyboard */; };
 		E9F3812B1C991C0A00858B4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9F3812A1C991C0A00858B4C /* Assets.xcassets */; };
 		E9F3812E1C991C0A00858B4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9F3812C1C991C0A00858B4C /* LaunchScreen.storyboard */; };
+		E9F3813D1C99342800858B4C /* worklight.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9F381351C99342800858B4C /* worklight.plist */; };
+		E9F3813E1C99342800858B4C /* IBMMobileFirstPlatformFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F381381C99342800858B4C /* IBMMobileFirstPlatformFoundation.framework */; };
+		E9F3813F1C99342800858B4C /* IBMMobileFirstPlatformFoundationJSONStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F381391C99342800858B4C /* IBMMobileFirstPlatformFoundationJSONStore.framework */; };
+		E9F381401C99342800858B4C /* openssl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F3813A1C99342800858B4C /* openssl.framework */; };
+		E9F381411C99342800858B4C /* SQLCipher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F3813B1C99342800858B4C /* SQLCipher.framework */; };
+		E9F381421C99342800858B4C /* Localizations.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E9F3813C1C99342800858B4C /* Localizations.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		E9F3812A1C991C0A00858B4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9F3812D1C991C0A00858B4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9F3812F1C991C0A00858B4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9F381351C99342800858B4C /* worklight.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = worklight.plist; sourceTree = "<group>"; };
+		E9F381381C99342800858B4C /* IBMMobileFirstPlatformFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IBMMobileFirstPlatformFoundation.framework; sourceTree = "<group>"; };
+		E9F381391C99342800858B4C /* IBMMobileFirstPlatformFoundationJSONStore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IBMMobileFirstPlatformFoundationJSONStore.framework; sourceTree = "<group>"; };
+		E9F3813A1C99342800858B4C /* openssl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = openssl.framework; sourceTree = "<group>"; };
+		E9F3813B1C99342800858B4C /* SQLCipher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SQLCipher.framework; sourceTree = "<group>"; };
+		E9F3813C1C99342800858B4C /* Localizations.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Localizations.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +45,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9F381401C99342800858B4C /* openssl.framework in Frameworks */,
+				E9F3813F1C99342800858B4C /* IBMMobileFirstPlatformFoundationJSONStore.framework in Frameworks */,
+				E9F381411C99342800858B4C /* SQLCipher.framework in Frameworks */,
+				E9F3813E1C99342800858B4C /* IBMMobileFirstPlatformFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +58,8 @@
 		E9F381121C991C0A00858B4C = {
 			isa = PBXGroup;
 			children = (
+				E9F381351C99342800858B4C /* worklight.plist */,
+				E9F381361C99342800858B4C /* WorklightAPI */,
 				E9F3811D1C991C0A00858B4C /* MyAppiOS-OC */,
 				E9F3811C1C991C0A00858B4C /* Products */,
 			);
@@ -77,6 +95,26 @@
 				E9F3811F1C991C0A00858B4C /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E9F381361C99342800858B4C /* WorklightAPI */ = {
+			isa = PBXGroup;
+			children = (
+				E9F381371C99342800858B4C /* Frameworks */,
+				E9F3813C1C99342800858B4C /* Localizations.bundle */,
+			);
+			path = WorklightAPI;
+			sourceTree = "<group>";
+		};
+		E9F381371C99342800858B4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9F381381C99342800858B4C /* IBMMobileFirstPlatformFoundation.framework */,
+				E9F381391C99342800858B4C /* IBMMobileFirstPlatformFoundationJSONStore.framework */,
+				E9F3813A1C99342800858B4C /* openssl.framework */,
+				E9F3813B1C99342800858B4C /* SQLCipher.framework */,
+			);
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +174,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9F3813D1C99342800858B4C /* worklight.plist in Resources */,
 				E9F3812E1C991C0A00858B4C /* LaunchScreen.storyboard in Resources */,
+				E9F381421C99342800858B4C /* Localizations.bundle in Resources */,
 				E9F3812B1C991C0A00858B4C /* Assets.xcassets in Resources */,
 				E9F381291C991C0A00858B4C /* Main.storyboard in Resources */,
 			);
@@ -263,6 +303,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WorklightAPI/Frameworks",
+				);
 				INFOPLIST_FILE = "MyAppiOS-OC/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.obsi.MyAppiOS-OC";
@@ -274,6 +318,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WorklightAPI/Frameworks",
+				);
 				INFOPLIST_FILE = "MyAppiOS-OC/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.obsi.MyAppiOS-OC";
