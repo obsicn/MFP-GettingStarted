@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <IBMMobileFirstPlatformFoundation/IBMMobileFirstPlatformFoundation.h>
 
 @interface AppDelegate ()
 
@@ -17,7 +18,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    NSURL* url = [NSURL URLWithString:@"/adapters/MyAdapter/getFeed"];
+    WLResourceRequest* request = [WLResourceRequest requestWithURL:url method:WLHttpMethodGet];
+    [request setQueryParameterValue:@"['technology']" forName:@"params"];
+    
+    [request sendWithCompletionHandler:^(WLResponse *response, NSError *error) {
+        if(error != nil){
+            NSLog(@"%@",error.description);
+        }
+        else{
+            NSLog(@"%@",response.responseJSON);
+        }
+    }];
+    
     return YES;
+  
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
